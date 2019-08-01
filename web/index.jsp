@@ -19,7 +19,7 @@
 <body>
 
 <div align="center" style="font-size: 25px; margin-top: 50px">
-    管理员${admin.name},欢迎您
+    管理员${admin.name},欢迎您,${lastTime}
 </div>
 <div align="center" style="margin-top: 20px">
     <a href="${pageContext.request.contextPath}/userListServlet" style="text-decoration:none;font-size:33px">
