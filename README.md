@@ -17,6 +17,6 @@
 - 用户信息的分页条件查询
 
 #### 演示
-- [Demo](http://119.23.40.90:8080/user/login.jsp)
+- [Demo v1.0](http://119.23.40.90:8080/user/login.jsp)
 - 登录账号:admin
 - 登录密码:admin
