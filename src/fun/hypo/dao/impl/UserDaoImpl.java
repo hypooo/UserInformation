@@ -95,7 +95,7 @@ public class UserDaoImpl implements UserDao {
 
         //遍历map集合
         Set<String> keySet = conditions.keySet();
-        List<Object> elements = new ArrayList<Object>();
+        List<Object> elements = new ArrayList<>();
         for (String key : keySet) {
             if ("currentPage".equals(key)) {//跳过第一个参数
                 continue;
@@ -111,6 +111,6 @@ public class UserDaoImpl implements UserDao {
         elements.add(count);
 
         sql = sb.toString();
-        return template.query(sql, new BeanPropertyRowMapper<User>(User.class), elements.toArray());
+        return template.query(sql, new BeanPropertyRowMapper<>(User.class), elements.toArray());
     }
 }
